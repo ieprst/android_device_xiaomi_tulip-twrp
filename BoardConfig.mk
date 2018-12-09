@@ -60,6 +60,10 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
 TARGET_PREBUILT_KERNEL := device/xiaomi/tulip/prebuilt/Image.gz-dtb
 
+# LZMA compression for recovery's & kernel ramdisk....
+BOARD_CUSTOM_BOOTIMG_MK := device/xiaomi/tulip/custombootimg.mk
+BOARD_CANT_BUILD_RECOVERY_FROM_BOOT_PATCH := true
+
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno509
